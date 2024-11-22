@@ -39,8 +39,8 @@ local function on_construct(pos)
     meta:set_int('liquid_level', 0);    -- how much of the liquid is in there?
 
     local inv = meta:get_inventory()
-    inv:set_size("input", 1);  -- to fill in new liquid
-    inv:set_size("output", 1); -- to extract liquid
+    inv:set_size("input", 0);  -- to fill in new liquid
+    inv:set_size("output", 0); -- to extract liquid
 end
 
 local function can_dig(pos)
